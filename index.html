@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Application Form</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="header">
+        <div class="logo">
+          <img src="img.png" alt="Logo" />
+        </div>
+        <div class="photo-upload">
+          <label for="photo">Upload Photo</label>
+          <input type="file" id="photo" name="photo" />
+        </div>
+      </div>
+
+      <h1>Application Form</h1>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="personal-info">
+            <div>
+                <label for="name">Subscriber Name.:</label>
+                <input type="text" id="name" name="name" />
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+
+
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" />
+
+              <label for="subscriber-id">Subscriber ID:</label>
+              <input type="text" id="subscriber-id" name="subscriber-id" />
+
+              <label for="contact-person">Contact Person:</label>
+              <input type="text" id="contact-person" name="contact-person" />
+
+              <label for="mobile-number">Mobile Number:</label>
+              <input type="text" id="mobile-number" name="mobile-number" />
+
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" />
+
+              <label for="Father">Father's Name:</label>
+              <input type="text" id="Father" name="Father" />
+
+              <label for="2nd">Second Contact Name:</label>
+              <input type="text" id="2nd" name="2nd" />
+
+              <label for="Relation">Relation With Second Contact:</label>
+              <input type="text" id="Relation" name="Relation" />
+
+              <label for="nid-passport">NID/Passport No.:</label>
+              <input type="text" id="nid-passport" name="nid-passport" />
+            </div>
+            <div>
+                <label for="sl-no">SL No.:</label>
+                <input type="text" id="sl-no" name="sl-no" />
+
+              <label for="occupation">Occupation:</label>
+              <input type="text" id="occupation" name="occupation" />
+
+              <label for="designation">Designation:</label>
+              <input type="text" id="designation" name="designation" />
+
+              <label for="nationality">Nationality:</label>
+              <input type="text" id="nationality" name="nationality" />
+
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob" />
+
+              <label for="nid-passport">NID/Passport No.:</label>
+              <input type="text" id="nid-passport" name="nid-passport" />
+
+              <label for="Connection">Connection Address:</label>
+              <input type="text" id="Connection" name="Connection" />
+
+
+              <label for="Mother">Mother's Name:</label>
+              <input type="text" id="Mother" name="Mother" />
+
+
+              <label for="mobile-number">Mobile Number:</label>
+              <input type="text" id="mobile-number" name="mobile-number" />
+
+              <label for="2nd-Address">Second Contact Address:</label>
+              <input type="text" id="2nd-Address" name="2nd-Address" />
+
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Billing Information</legend>
+          <label for="billing-address">Billing Address:</label>
+          <textarea id="billing-address" name="billing-address"></textarea>
+
+          <label for="billing-mobile">Mobile Number:</label>
+          <input type="text" id="billing-mobile" name="billing-mobile" />
+
+          <label for="billing-telephone">Telephone:</label>
+          <input type="text" id="billing-telephone" name="billing-telephone" />
+
+          <label for="billing-fax">Fax:</label>
+          <input type="text" id="billing-fax" name="billing-fax" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Technical Information</legend>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="service-type" value="internet" />
+              Internet
+            </label>
+            <label>
+              <input type="checkbox" name="service-type" value="data" />
+              Data
+            </label>
+            <label>
+              <input type="checkbox" name="service-type" value="cloud" />
+              Cloud
+            </label>
+            <label>
+                <input type="checkbox" name="service-type" value="others" /> Others
+                <textarea placeholder="Specify here" rows="1"></textarea>
+              </label>
+          </div>
+
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="connection-type" value="dedicated" />
+              Dedicated
+            </label>
+            <label>
+              <input type="checkbox" name="connection-type" value="shared" />
+              Shared
+            </label>
+            <label>
+              <input type="checkbox" name="connection-type" value="others" />
+              Others
+              <textarea placeholder="Specify here" rows="1"></textarea>
+            </label>
+          </div>
+
+          <div class="checkbox-group">
+            <label>
+              <input
+                type="checkbox"
+                name="connection-media"
+                value="wireless"
+              />
+              Wireless
+            </label>
+            <label>
+              <input type="checkbox" name="connection-media" value="fiber" />
+              Fiber
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="connection-media"
+                value="ethernet"
+              />
+              Ethernet
+            </label>
+            <label>
+              <input type="checkbox" name="connection-media" value="fttx" />
+              FTTx
+            </label>
+            <label>
+              <input type="checkbox" name="connection-media" value="others" />
+              Others
+              <textarea placeholder="Specify here" rows="1"></textarea>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Financial Information</legend>
+          <label for="broadband-bill">
+            Broadband Internet Connection Bill (Monthly) Tk.:
+          </label>
+          <input type="text" id="broadband-bill" name="broadband-bill" />
+
+          <div class="checkbox-group">
+            <label>
+              <input
+                type="checkbox"
+                name="financial-charges"
+                value="installation"
+              />
+              Installation Charge
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="financial-charges"
+                value="utp-cable"
+              />
+              UTP Cable
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="financial-charges"
+                value="fiber-cable"
+              />
+              Fiber Cable
+            </label>
+            <label>
+              <input type="checkbox" name="financial-charges" value="device" />
+              Device
+            </label>
+            <label>
+              <input type="checkbox" name="financial-charges" value="others" />
+              Others<textarea placeholder="Specify here" rows="1"></textarea>
+            </label>
+          </div>
+
+          <label for="financial-tk">Tk Amount:</label>
+          <input type="text" id="financial-tk" name="financial-tk" />
+        </fieldset>
+
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

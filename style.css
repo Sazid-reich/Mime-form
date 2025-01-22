@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .form-wrapper {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .header img {
+    height: 150px;
+  }
+
+  .photo-upload {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    background: #f7f7f7;
+  }
+
+  .photo-upload input[type="file"] {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  fieldset {
+    grid-column: span 2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    background: #fdfdfd;
+  }
+
+  legend {
+    font-weight: bold;
+    padding: 0 10px;
+  }
+
+  .personal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  select {
+    width: 100%; /* Adjust width to match other inputs */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+  }
+  
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-group textarea {
+    display: inline-block; /* Keep it inline with the checkbox */
+    margin-left: 10px; /* Add spacing from the checkbox */
+    vertical-align: middle; /* Align vertically with the checkbox */
+    width: auto; /* Adjust width as needed */
+    height: 20px; /* Adjust height for compact display */
+    padding: 2px; /* Padding for better text visibility */
+    border: 1px solid #ccc; /* Optional: Keep border for clarity */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Prevent resizing */
+  }
+  
+
+  .submit-button {
+    text-align: center;
+    grid-column: span 2;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+  }
+
+  button:hover {
+    background: #555;
+  }
